@@ -1,0 +1,33 @@
+CREATE TABLE makeup (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO makeup VALUES (1, "Foundation", 12, 40, "light");
+
+INSERT INTO makeup VALUES (2, "lipstick", 10, 22, "red");
+
+
+INSERT INTO makeup VALUES (3, "Blush", 6, 28, "pink");
+
+INSERT INTO makeup VALUES (4, "Bronzer", 4, 26, "medium");
+
+INSERT INTO makeup VALUES (5, "concealer", 8, 25, "light");
+
+INSERT INTO makeup VALUES (6, "mascara", 2, 16, "black");
+
+INSERT INTO makeup VALUES (7, "lashes", 8, 9, "black");
+
+INSERT INTO makeup VALUES (8, "lipgloss", 12, 24, "pink");
+
+INSERT INTO makeup VALUES (9, "lipliner", 4, 16, "brown");
+
+INSERT INTO makeup VALUES (10, "eyeliner", 3, 22, "black");
+
+INSERT INTO makeup VALUES (11, "highlighter", 3, 30, "bronze");
+
+INSERT INTO makeup VALUES (12, "primer", 2, 15, "clear");
+
+INSERT INTO makeup VALUES (13, "serum", 1,34, "clear");
+
+INSERT INTO makeup VALUES (14, "sunscreen", 3, 43, "pearl");
+
+INSERT INTO makeup VALUES (15, "brows", 4,19, "brown");
+SELECT * FROM makeup WHERE price < 30 ORDER BY price;
